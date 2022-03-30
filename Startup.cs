@@ -110,6 +110,9 @@ namespace PaymentAPI
 
             app.UseHttpsRedirection();
 
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "PaymentAPI v1"));
+
             app.UseRouting();
 
             app.UseAuthorization();

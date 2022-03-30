@@ -5,6 +5,9 @@ using PaymentAPI.Data;
 using System.Threading.Tasks;
 using PaymentAPI.Models;
 
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+
 namespace PaymentAPI.Controllers
 {
     [ApiController]
