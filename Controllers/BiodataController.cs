@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
-using System.Web.Mvc;
+using System.Text;
+
+
 
 namespace PaymentAPI.Controllers
 {
@@ -19,10 +21,6 @@ namespace PaymentAPI.Controllers
 
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
 
         [Route("[controller]")]
         [HttpGet]

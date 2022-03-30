@@ -158,3 +158,5 @@ D:\MyFiles\Hacktiv8\kode\PaymentAPI\obj\Release\net5.0\PaymentAPI.dll
 D:\MyFiles\Hacktiv8\kode\PaymentAPI\obj\Release\net5.0\ref\PaymentAPI.dll
 D:\MyFiles\Hacktiv8\kode\PaymentAPI\obj\Release\net5.0\PaymentAPI.pdb
 D:\MyFiles\Hacktiv8\kode\PaymentAPI\obj\Release\net5.0\PaymentAPI.genruntimeconfig.cache
+D:\MyFiles\Hacktiv8\kode\PaymentAPI\bin\Release\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\MyFiles\Hacktiv8\kode\PaymentAPI\bin\Release\net5.0\Microsoft.Extensions.DependencyModel.dll
