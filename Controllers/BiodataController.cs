@@ -1,12 +1,16 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+using System.Web.Mvc;
 
 namespace PaymentAPI.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("/")]
+
+    
     public class BiodataController : ControllerBase
     {   
+
         public class BiodataDetails
         {
             public string nama {get;set;}
@@ -15,6 +19,12 @@ namespace PaymentAPI.Controllers
 
         }
 
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        [Route("[controller]")]
         [HttpGet]
         public ActionResult GetBiodata (){
 

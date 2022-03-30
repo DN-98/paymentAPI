@@ -238,3 +238,13 @@ D:\MyFiles\Hacktiv8\kode\PaymentAPI\obj\Debug\net5.0\PaymentAPI.dll
 D:\MyFiles\Hacktiv8\kode\PaymentAPI\obj\Debug\net5.0\ref\PaymentAPI.dll
 D:\MyFiles\Hacktiv8\kode\PaymentAPI\obj\Debug\net5.0\PaymentAPI.pdb
 D:\MyFiles\Hacktiv8\kode\PaymentAPI\obj\Debug\net5.0\PaymentAPI.genruntimeconfig.cache
+D:\MyFiles\Hacktiv8\kode\PaymentAPI\obj\Debug\net5.0\PaymentAPI.RazorAssemblyInfo.cache
+D:\MyFiles\Hacktiv8\kode\PaymentAPI\obj\Debug\net5.0\PaymentAPI.RazorAssemblyInfo.cs
+D:\MyFiles\Hacktiv8\kode\PaymentAPI\bin\Debug\net5.0\PaymentAPI.Views.dll
+D:\MyFiles\Hacktiv8\kode\PaymentAPI\bin\Debug\net5.0\PaymentAPI.Views.pdb
+D:\MyFiles\Hacktiv8\kode\PaymentAPI\obj\Debug\net5.0\PaymentAPI.TagHelpers.input.cache
+D:\MyFiles\Hacktiv8\kode\PaymentAPI\obj\Debug\net5.0\PaymentAPI.TagHelpers.output.cache
+D:\MyFiles\Hacktiv8\kode\PaymentAPI\obj\Debug\net5.0\PaymentAPI.RazorCoreGenerate.cache
+D:\MyFiles\Hacktiv8\kode\PaymentAPI\obj\Debug\net5.0\Razor\Views\index.cshtml.g.cs
+D:\MyFiles\Hacktiv8\kode\PaymentAPI\obj\Debug\net5.0\PaymentAPI.RazorTargetAssemblyInfo.cs
+D:\MyFiles\Hacktiv8\kode\PaymentAPI\obj\Debug\net5.0\PaymentAPI.Views.pdb
