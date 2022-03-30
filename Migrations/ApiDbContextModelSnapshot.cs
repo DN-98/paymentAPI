@@ -220,12 +220,14 @@ namespace PaymentAPI.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("cardOwnerName")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTime>("expirationDate")
                         .HasColumnType("datetime");
 
                     b.Property<string>("securityCode")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("paymentDetailId");

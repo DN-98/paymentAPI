@@ -9,7 +9,7 @@ using PaymentAPI.Data;
 namespace PaymentAPI.Migrations
 {
     [DbContext(typeof(ApiDbContext))]
-    [Migration("20220330091649_initial")]
+    [Migration("20220330144351_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -222,12 +222,14 @@ namespace PaymentAPI.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("cardOwnerName")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTime>("expirationDate")
                         .HasColumnType("datetime");
 
                     b.Property<string>("securityCode")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("paymentDetailId");
