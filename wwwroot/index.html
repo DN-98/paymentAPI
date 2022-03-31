@@ -4,32 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <title>Payment API</title>
 </head>
-<body>
-    <div class="w-screen h-screen bg-gradient-to-r from-cyan-500 to-blue-500">
+<body class="bg-gradient-to-r from-cyan-500 to-blue-500" >
+    <div class="w-screen h-screen ">
         <div class="flex flex-row h-full">
-            <div class="flex justify-center items-center basis-3/5">
-                <div class="text-white w-3/4">
-                    <div class="text-6xl font-bold pb-10">Payment API</div>
+            <div class="flex md:justify-center md:items-center basis-full md:basis-3/4">
+                <div class="text-white w-full xl:p-24 md:p-20 sm:p-16 p-10">
+                    <div class="text-4xl md:text-5xl font-bold pb-8">
+                        <img src="img/logo.svg" class="h-10 md:h-16 mb-2" alt="">
+                        Payment API</div>
                     <p class="mb-4">An application programming interface (API) is a connection between computers or between computer programs. It is a type of software interface, offering a service to other pieces of software. (source: Wikipedia)</p>
                     <h1 class="">
                         Created by
                     </h1>
-                    <p class="pl-4">Deah Nisa Azizah <br> FSDO003ONL003 <br>https://github.com/DN-98/ocbc_csharp_batch3
+                    <p class="pl-4">Deah Nisa Azizah <br> FSDO003ONL003 <br><span class="hidden md:block">https://github.com/DN-98/ocbc_csharp_batch3</span>
                     </p>
-                    <p>Powered By</p>
-                    <button onclick="location.href='https://github.com/DN-98/paymentAPI'" class="my-8 text-white rounded-md bg-black border-black border-2  text-white text-xl px-4 py-2">
+                    
+                    <button onclick="location.href='https://github.com/DN-98/paymentAPI'" class="w-full md:w-40 mt-8 px-4 py-2 text-white rounded-md bg-black border-black border-2 text-white text-xl mr-6 shadow-md hover:animate-[pulse_3s_infinite]">
                         Github
                     </button>
-                    <button onclick="location.href='swagger/index.html'" class="my-8 text-purple-500 rounded-md bg-white border-purple-500 shadow-md text-white text-xl px-4 py-2 border-2">
+                    <button onclick="location.href='swagger/index.html'" class="w-full md:w-40 px-4 py-2 my-2 text-purple-500 rounded-md bg-white border-purple-500 shadow-md text-white text-xl border-2 hover:animate-[pulse_3s_infinite]">
                         Swagger
                     </button>
-                    <img class="h-10" src="img/swagger_logo.svg" alt="">
-                    <img class="h-10" src="img/Heroku_logo.svg" alt="">
+                    <div>
+                        <p class="mb-4">Powered By</p>
+                        <a href="https://swagger.io/"><img class="inline h-10 mr-8 hover:motion-safe:animate-bounce" src="img/swagger_logo.svg" alt=""></a>
+                        <a href="https://www.heroku.com/"><img class="inline h-10 hover:animate-bounce" src="img/Heroku_logo.svg" alt=""></a>
+                    </div>
+                    
                 </div>
-            </div>
-            <div class="basis-2/5">
-              
             </div>
           </div>
         
