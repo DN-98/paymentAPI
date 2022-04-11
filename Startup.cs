@@ -38,6 +38,9 @@ namespace PaymentAPI
 
             services.AddControllers();
             // services.AddControllersWithViews();
+
+            services.AddCors();
+            
             services.AddSwaggerGen(c =>
             {
                 string desc = string.Format($"JWT Authorization header using the Bearer scheme. <br><br>Enter 'Bearer' [space] and then your token in the text input below. <br>&emsp;<b>Example</b>: 'Bearer 12345abcdef'");
@@ -120,6 +123,11 @@ namespace PaymentAPI
             app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "PaymentAPI v1"));
 
             app.UseRouting();
+
+            app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
 
             app.UseAuthorization();
 

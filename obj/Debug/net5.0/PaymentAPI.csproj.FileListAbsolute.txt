@@ -338,3 +338,4 @@ D:\MyFiles\Hacktiv8\kode\FinalProject\PaymentAPI\obj\Debug\net5.0\Razor\Views\Ho
 D:\MyFiles\Hacktiv8\kode\FinalProject\PaymentAPI\bin\Debug\net5.0\ref\PaymentAPI.dll
 D:\MyFiles\Hacktiv8\kode\PaymentAPI\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
 D:\MyFiles\Hacktiv8\kode\PaymentAPI\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+D:\MyFiles\Hacktiv8\kode\PaymentAPI\bin\Debug\net5.0\PaymentAPI_Insomnia_2022-03-30.json

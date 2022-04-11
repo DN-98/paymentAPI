@@ -1,10 +1,12 @@
 D:\MyFiles\Hacktiv8\kode\PaymentAPI\bin\Release\net5.0\publish\PaymentAPI.exe
 D:\MyFiles\Hacktiv8\kode\PaymentAPI\bin\Release\net5.0\publish\wwwroot\img\Heroku_logo.svg
+D:\MyFiles\Hacktiv8\kode\PaymentAPI\bin\Release\net5.0\publish\wwwroot\img\logo.svg
 D:\MyFiles\Hacktiv8\kode\PaymentAPI\bin\Release\net5.0\publish\wwwroot\img\payments_black_24dp.svg
 D:\MyFiles\Hacktiv8\kode\PaymentAPI\bin\Release\net5.0\publish\wwwroot\img\swagger_logo.svg
 D:\MyFiles\Hacktiv8\kode\PaymentAPI\bin\Release\net5.0\publish\wwwroot\index.html
 D:\MyFiles\Hacktiv8\kode\PaymentAPI\bin\Release\net5.0\publish\appsettings.Development.json
 D:\MyFiles\Hacktiv8\kode\PaymentAPI\bin\Release\net5.0\publish\appsettings.json
+D:\MyFiles\Hacktiv8\kode\PaymentAPI\bin\Release\net5.0\publish\PaymentAPI_Insomnia_2022-03-30.json
 D:\MyFiles\Hacktiv8\kode\PaymentAPI\bin\Release\net5.0\publish\PaymentAPI.dll
 D:\MyFiles\Hacktiv8\kode\PaymentAPI\bin\Release\net5.0\publish\PaymentAPI.runtimeconfig.json
 D:\MyFiles\Hacktiv8\kode\PaymentAPI\bin\Release\net5.0\publish\PaymentAPI.pdb
