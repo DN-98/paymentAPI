@@ -5,6 +5,7 @@ using System.Text;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Security.Claims;
+
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -20,9 +21,14 @@ using PaymentAPI.Data;
 
 using Microsoft.EntityFrameworkCore;
 
+using Microsoft.AspNetCore.Http;
+using System.Net.Http;
+// using System.Net.Http.Headers;
+// using System.Net.Http.Formatting;
 
 namespace PaymentAPI.Controllers
 {
+    
     [Route("api/[controller]")]
     [ApiController]
     public class AuthManagementController : ControllerBase
@@ -72,6 +78,9 @@ namespace PaymentAPI.Controllers
                 {
                     var jwtToken = await GenerateJwtToken(newUser);
 
+                    Response.Cookies.Append("token", jwtToken.Token, new CookieOptions() { HttpOnly = true, SameSite = SameSiteMode.Strict });
+                    Response.Cookies.Append("refreshToken", jwtToken.RefreshToken, new CookieOptions() { HttpOnly = true, SameSite = SameSiteMode.Strict });
+
                     return Ok(jwtToken);
                 } else
                 {
@@ -92,6 +101,7 @@ namespace PaymentAPI.Controllers
         [Route("Login")]
         public async Task<IActionResult> Login([FromBody] UserLoginRequest user)
         {
+            
             if(ModelState.IsValid)
             {
                 var existingUser = await _userManager.FindByEmailAsync(user.Email);
@@ -118,6 +128,8 @@ namespace PaymentAPI.Controllers
                     });   
                 }
                 var jwtToken = await GenerateJwtToken(existingUser);
+                Response.Cookies.Append("token", jwtToken.Token, new CookieOptions() { HttpOnly = true, SameSite = SameSiteMode.Strict });
+                Response.Cookies.Append("refreshToken", jwtToken.RefreshToken, new CookieOptions() { HttpOnly = true, SameSite = SameSiteMode.Strict });
                 return Ok(jwtToken);
 
             }
@@ -141,6 +153,10 @@ namespace PaymentAPI.Controllers
                         Success = false
                     });
                 }
+
+                // Response.Cookies.Append("token", jwtToken.Token, new CookieOptions() { HttpOnly = true, SameSite = SameSiteMode.Strict });
+                // Response.Cookies.Append("refreshToken", jwtToken.RefreshToken, new CookieOptions() { HttpOnly = true, SameSite = SameSiteMode.Strict });
+
                 return Ok(result);
             }
 
@@ -302,9 +318,6 @@ namespace PaymentAPI.Controllers
             return new string(Enumerable.Repeat(chars, length).
                 Select(x=> x[random.Next(x.Length)]).ToArray());
         }
-
-
     }
-
     
 }
